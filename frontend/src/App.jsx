@@ -23,6 +23,8 @@ function App(){
       <Route path ="/Settings" element={<Settings/>}/>
     </Routes>
     </BrowserRouter>
+
+    
   )
 }
 
