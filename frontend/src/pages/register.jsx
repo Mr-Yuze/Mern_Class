@@ -9,8 +9,8 @@ function Register() {
     })
      function onsubmit(data){
         console.log(data)
-        alert("registeration successful daw nanba 🗿🗿")
-        navigate("/login")
+        alert("registeration successful")
+        navigate("/",{state:data})
      }
     return ( 
       <>

@@ -8,13 +8,16 @@ import Dashboard from "./pages/dashboard";
 import Calender from "./pages/calender";
 import Settings from "./pages/settings";
 import Register from "./pages/register";
+import Admin from "./pages/admin/adminlayout";
+import Adashboard from "./pages/admin/Adashboard";
+import Userdetails from "./pages/admin/userdetails";
 
 
 function App(){
   return(
     <BrowserRouter>
     <Routes>
-      <Route path ="/Login" element={<Login/>}/>
+      <Route path ="/" element={<Login/>}/>
       <Route path ="/Aboutus" element={<Aboutus/>}/>
       <Route path ="/Task" element={<Task/>}/>
       <Route path ="/Team" element={<Team/>}/>
@@ -23,6 +26,10 @@ function App(){
       <Route path ="/Calender" element={<Calender/>}/>
       <Route path ="/Settings" element={<Settings/>}/>
       <Route path ="/Register" element={<Register/>}/>
+      <Route path= "/admin" element={<Admin/>}/>
+        <Route path="Adashboard" element={<Adashboard/>}/>
+        <Route path="settings" element={<Settings/>}/>
+        <Route path="userdetails" element={<Userdetails/>}/>
     </Routes>
     </BrowserRouter>
 
